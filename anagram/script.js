@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
   $('#palindrome-button').click(event => {
-    const word = $('#palindrome-input').val()
     event.preventDefault();
+    const word = $('#palindrome-input').val()
+
+    if(!word) {
+      return window.alert('Please input valid word');
+    }
 
     if(!palindromeChecker(word.toLowerCase().toString())) {
       $('#palindrome-board').append(`
