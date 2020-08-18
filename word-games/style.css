@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:focus, button:active {
+  border: none;
+  outline: none ;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #1b262c;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  cursor: default;
+}
+
+.word-games {
+  margin: 15px;
+  padding: 3rem;
+  border-radius: 3em;
+  min-height: 60vh;
+}
+
+.word-games > header > h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.word-games > header > p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.word-games-form {
+  margin-bottom: 1rem;
+}
+
+.word-games-results {
+  text-align: center;
+}
+
+#palindrome {
+  background-color: #0f4c75;
+  color: white;
+}
+
+#anagram {
+  background-color: #bbe1fa;
+}
+
+#palindrome-form, #anagram-form {
+  display: grid;
+  grid-gap: 5px;
+  border: 0;
+}
+
+#palindrome-input, #palindrome-form > button, #anagram-input-first, #anagram-input-second, #anagram-form > button {
+  height: 3em;
+  font-size: 1em;
+}
+
+#palindrome-input, #anagram-input-first, #anagram-input-second {
+  padding: 15px;
+}
+
+#palindrome-form > button, #anagram-form > button {
+  margin-top: 15px;
+  border: 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#palindrome-form > button:hover {
+  background-color: #0f4c75;
+  color: white;
+  border: white 2px solid;
+}
+
+#anagram-form > button:hover {
+  background-color: #bbe1fa;
+  color: white;
+  border: white 2px solid;
+}
+
+footer {
+  background-color: #1b262c;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-size: xx-small;
+}
+
+.not-anagram::before, .not-palindrome::before {
+  content: '❌';
+}
+
+.is-anagram::before, .is-palindrome::before {
+  content: '✔️';
+}
+
+.result {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+#anagram > .result {
+  border-bottom: 2px solid black;
+}

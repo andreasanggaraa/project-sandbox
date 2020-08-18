@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Games | Palindrome | Anagram</title>
+  <meta name="description" content="This is a website to check if a word whether a palindrome or an anagram or not. Palindrome checker | Anagram checker">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <section id="palindrome" class="word-games">
+      <header class="word-games-header">
+        <h1>PALINDROME Checker</h1>
+        <p>A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam, racecar. There are also numeric palindromes, including date/time stamps using short digits 11/11/11 11:11 and long digits 02/02/2020. <i>- Wikipedia</i></p>
+      </header>
+      <form id="palindrome-form" class="word-games-form">
+        <input type="text" id="palindrome-input" placeholder="Your word here">
+        <button id="palindrome-button">Check</button>
+        <button id="palindrome-reset">Reset</button>
+      </form>
+      <h3 class="result">Result</h3>
+      <ul id="palindrome-board" class="word-games-board"></ul>
+    </section>
+  
+    <section id="anagram" class="word-games">
+      <header class="word-games-header">
+        <h1>ANAGRAM Checker</h1>
+        <p>An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. For example, the word anagram can be rearranged into nag a ram, or the word binary into brainy or the word adobe into abode. <i>- Wikipedia</i></p>
+      </header>
+      <form id="anagram-form" class="word-games-form">
+        <input type="text" id="anagram-input-first" placeholder="First word">
+        <input type="text" id="anagram-input-second" placeholder="Second word">
+        <button id="anagram-submit">Check</button>
+        <button id="anagram-reset">Reset</button>
+      </form>
+      <h3 class="result">Result</h3>
+      <ul id="anagram-board" class="word-games-board"></ul>
+    </section>
+  </div>
+  <footer>
+    <p>Andreas Anggara &#xA9; 2020</p>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
